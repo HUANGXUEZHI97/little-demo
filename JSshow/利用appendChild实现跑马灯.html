@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>js</li>
+        <li>html</li>
+    </ul>
+    <button>add!</button>
+    <script>
+        var btn = document.getElementsByTagName("button");
+        btn[0].onclick = function () {
+            var son = document.createElement("li");
+            var node = document.createTextNode("add a li by click! ");
+            son.appendChild(node);
+
+            var parent = document.getElementsByTagName("ul");
+            parent[0].appendChild(son);
+        }
+
+        setInterval(function () {
+            var son = document.getElementsByTagName("li");
+            var parent = document.getElementsByTagName("ul");
+            parent[0].appendChild(son[0]);
+        },500);
+    </script>
+</body>
+
+</html>

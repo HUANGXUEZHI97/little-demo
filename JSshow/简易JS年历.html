@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        height: auto;
+        width: 330px;
+        margin:  10px auto;
+        background-color: #EAEAEA;
+        text-align: center;
+    }
+    .month{
+        background-color: #424242;
+        color: white;
+        font-size: 25px;
+        height: 70px;
+        width: 70px;
+        display: inline-block;
+        margin: 5px 1px 1px 1px;
+        cursor:pointer;
+        border: 1px solid #424242;
+
+    }
+    .month>p{
+        font-weight: 600;
+    }
+
+    .detail{
+        height: 100px;
+        width: 310px;
+        border: 1px solid white;
+        margin: 5px auto;
+        text-align: left;
+        color: #666666;
+        position: relative;
+    }
+
+    .detail>p{
+        font-size: 22px;
+        font-weight: 600;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+
+    .detail>span{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        
+    }
+    .bottom{
+        width: 100%;
+        height: 5px;
+        background-color: #EAEAEA;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="month"><p>1</p>JAN</div>
+        <div class="month"><p>2</p>FER</div>
+        <div class="month"><p>3</p>MAR</div>
+        <div class="month"><p>4</p>APR</div>
+        <div class="month"><p>5</p>MAY</div>
+        <div class="month"><p>6</p>JUN</div>
+        <div class="month"><p>7</p>JUL</div>
+        <div class="month"><p>8</p>AUG</div>
+        <div class="month" style="background:white;border: 1px solid black;color: #FF6699; "><p>9</p>SEP</div>
+        <div class="month"><p>10</p>OCT</div>
+        <div class="month"><p>11</p>NOV</div>
+        <div class="month"><p>12</p>DEC</div>
+        <div class="detail" style="display:none;"><p>1月节日</p><span> 元旦：1月1日至3日放假3天。</span></div>
+        <div class="detail" style="display:none;"><p>2月节日</p><span> 春节：2月2日至8日放假7天。</span></div>
+        <div class="detail" style="display:none;"><p>3月节日</p><span> 妇女节：3月8日妇女节，与我无关。</span></div>
+        <div class="detail" style="display:none;"><p>4月节日</p><span> 清明节：4月3日至5日放假3天。</span></div>
+        <div class="detail" style="display:none;"><p>5月节日</p><span>劳动节：4月30日至5月2日放假3天。</span> </div>
+        <div class="detail" style="display:none;"><p>6月节日</p><span> 端午节：6月4日至6日放假3天。</span></div>
+        <div class="detail" style="display:none;"><p>7月节日</p><span> 小暑：7月7日小暑。不放假。</span></div>
+        <div class="detail" style="display:none;"><p>8月节日</p><span> 七夕节：8月6日七夕节。不放假。</span></div>
+        <div class="detail" style="display:block;"><p>9月节日</p><span> 中秋节：9月10日至12日放假3天。</span></div>
+        <div class="detail" style="display:none;"><p>10月节日</p><span> 国庆节：10月1日至7日放假7天。</span></div>
+        <div class="detail" style="display:none;"><p>11月节日</p><span> 立冬：11月8日立冬。不放假。</span></div>
+        <div class="detail" style="display:none;"><p>12月节日</p><span> 艾滋病日:12月1日 废除奴隶制国际日:12月2日。</span></div>
+        <div class="bottom"></div>
+    </div>
+
+    <script>
+    var months = document.getElementsByClassName("month");
+    var details =document.getElementsByClassName("detail");
+    
+    for (let i = 0; i < months.length; i++) {
+        months[i].index = i;
+        months[i].onmouseover = function () {
+            for(let n = 0; n <months.length;n++){
+                months[n].style.background = "#424242";
+                months[n].style.border = "1px solid #424242";
+                // months[n].style.border = "#424242";  让边框消除，移动鼠标至别的月份时，每个格子会抖动；
+                months[n].style.color = "white";
+            }
+            this.style.background = "white";
+            this.style.border = "1px solid black";
+            this.style.color = "#FF6699";
+            for(let m = 0; m <details.length;m++){
+                details[m].style.display = "none";
+            }
+            details[this.index].style.display = "block";
+        }
+        
+    }
+    </script>
+</body>
+</html>

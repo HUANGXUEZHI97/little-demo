@@ -1,0 +1,46 @@
+/*·css·document*/
+/*公用部分-头部*/
+.header{background:#9E9E9E top;height: 120px;margin:-8px;padding:0px;border:0px;overflow: hidden;}
+.header .content{background: url(../images/535015e70c08701.jpg) no-repeat top;}
+.header .content{height: 120px;width: 1200px;margin:auto;padding: 0px;}
+.header .content .logo{float: left; height: 80px;width: 55px;}
+.header .content .logo img{float: left;margin-top: 20px;width:63px;height: 60px;} 
+.header .content .heading{float: left;height: 80px;width: 210px;margin-left: 15px;}
+.header .content .list{display: block;list-style-type: none;float: left;margin-left: 30px;}
+.header .content .list{overflow: hidden;height: 120px;width: 300px;overflow: hidden;}
+.header .content .list li{height: 80px;float: left;}
+.header .content .list .li1{background:url(../images/2logo_06.png) no-repeat top;width: 85px;}
+.header .content .list .li2{background:url(../images/2logo_08.png) no-repeat top;margin-left: 10px;width: 85px;}
+.header .content .list .li3{background:url(../images/2logo_10.png) no-repeat top;margin-left: 10px;width: 85px;}
+.header .content .list li span{margin-top:55px;float: left;font-weight: bold;padding-left: 10px;}
+.header .content .code{float: right;margin-right: 100px;}
+.header .content .heading2{float: right;width: 50px;height: 90px;}
+/*公用部分-菜单*/
+.menu{width: 1200px;margin: -22px auto;padding: 0px;list-style-type: none;display: block;}
+.menu  .word1{float: left;margin-left: 15px;}
+.menu  .word2{float: left;margin-left: 200px;}
+a{text-decoration: none;color:#681414;font-weight: bold;font-size: 17px;}
+/*公用部分-鲜美肥香*/
+.main{background:#F5DEB3 top;height: 700px;margin:20px -9px 0px ;padding: 0px;}
+.main .layout{background: url(../images/conbg_04.jpg) no-repeat top;padding: 0px;}
+.main .layout{margin:0px;height: 720px;width: 1200px;margin: auto;}
+.main .layout .left{float: left; display: block;height: 500px;width:520px;margin-left: 150px;padding-top: 100px;}
+.main .layout .right{float: right;background: url(../images/content_03.png) no-repeat top; }
+.main .layout .right{height: 500px;width: 450px;padding-right:50px;margin-top:80px;}
+/*hairy crab1*/
+.layout .left .block{margin: 0px;width: 520px;padding:15px 0px;font-size: 15px;}
+/*hairy crab2*/
+.layout .left form{float: left; padding:0px auto;margin-left:100px;margin-top: 50px}
+.layout .left .summary{float: left;margin: 0px;padding-top: 35px;}
+.layout .left .friendlink{float:left; color:red;margin-left: 60px;margin-top: 40px; font-size: 12px;}
+.layout .left .friendlink1{float:left; color:red;margin-left: 110px;margin-top: 40px; font-size: 12px;}
+.layout .left .friendlink2{float:left; color:red;margin-left: 160px;margin-top: 40px; font-size: 12px;}
+/*hairy crab3*/
+.layout .left .summary{display: block; margin-top: 5px;padding: 0px;width: 520px;padding:15px 0px;}
+.layout .left .summary span{float: left;font-size: 14px;margin-left: 10px; }
+.layout .left .summary span{padding-top: 10px; font-weight: bold;word-break: keep-all;}
+/*hairy crab4*/
+.layout .left .attention{display:inline-block; margin-top: 15px;padding: 0px;width: 520px;padding:15px 0px;}
+.layout .left .attention span{float: left;font-size: 14px;margin-left: 50px;margin-top:-45px;height: 20px;  }
+.layout .left .attention span{ font-weight: bold;word-break: break-all;}
+.layout .left .attention img{float: left;width: 40px;height: 40px;margin-top:28px;} 
