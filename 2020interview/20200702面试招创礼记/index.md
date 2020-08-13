@@ -370,6 +370,7 @@ git checkout -b <branch>（创建并切换到该分支）✔
 git merge <branch> (合并别的分支到当前分支上，合并的是commit内容)✔
 git merge --no-ff -m'<message>'(合并别的分支到当前分支上，新创建一个commit，并输入message，--no-ff可以添加内容到)✔
 git branch --set-upstream-to=origin/<branch> <branch>(指定本地分支和远程分支链接)✔
+git cherry-pick <commit num> 分支要拉去别的分支上的commit，然后再打包到测试去测√
 merge方法由几种：
 1. Fast-forward (merge之后，删除分支后，回丢掉分支信息)
 2. 非Fast-forward (merge之后，当前分支回新增一条commit)这种模式用git log ..... 可以看到项目分支修改的缩略图
