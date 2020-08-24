@@ -212,8 +212,8 @@ align-items:center;
 
 ### flex基本概念： ###
 1. 轴
-  主轴 main axis（主轴就是父容器水平方向中间的轴线）
-  交叉轴 cross axis（交叉轴轴就是父容器垂直方向中间的轴线）
+  主轴 main axis（主轴就是父容器水平方向中间的轴线，默认）
+  交叉轴 cross axis（交叉轴轴就是父容器垂直方向中间的轴线，默认）
 2. 容器
   父容器 container
   子容器 item
