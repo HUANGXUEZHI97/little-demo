@@ -102,8 +102,10 @@ Access-Controls-Allow-origin
 
 ## 8. 用多种方法实现div水平垂直居中，justify-content是沿着什么轴？
 1. display:flex;justify-content:center;align-items:center;
-2. position:fixed or absolute;top:50%;left:50%;transform:translate(-50%);
-2. margin:0 auto; margin-top:50%;transform:translateY(-50%);
+2. display:flex 配合 margin:auto;
+3. position:fixed or absolute;top:50%;left:50%;transform:translate(-50%,-50%); //注意：如果使用translate得输入两个参数，否则只有X轴有移动
+4. margin:0 auto; margin-top:50%;transform:translateY(-50%);
+5. display:grid 配合 place-content:center(place-content是align-items和justify-content的合体)
 
 ## 9. 用JS编写函数从下面的URL串中解析出所有的参数：
 ```javascript

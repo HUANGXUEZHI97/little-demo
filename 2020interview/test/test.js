@@ -155,3 +155,25 @@ instance1.colors.push("black");
 console.log(instance1.colors);//"red,blue,green,black"
 let instance2 = new Son();
 console.log(instance2.colors);//"red,blue,green"
+
+
+//函数传参的问题：到底是值传递还是引用传递？
+// 答：都是值传递，如果是基础类型就直接传值，如果是引用类型就传内存地址（如果是传递引用对象，这才叫引用传递）；
+
+var obj1 = {a:1}
+var obj2 = {a:2}
+
+function change(obj){
+  obj.a = 3;
+  obj = new Object();
+  obj.a = 4;
+  return obj;
+}
+
+obj3 = change(obj1)
+console.log('[ obj1 ]', obj1)
+console.log('[ obj2 ]', obj2)
+console.log('[ obj3 ]', obj3)
+
+// 如果obj1为{a:4的话，表明change的形参obj = 实参obj1，这叫引用传递，
+// 如果obj1为{a:3的话，表明change的形参obj 复制了 实参obj1，这叫值传递，传递的是obj1的内存地址；

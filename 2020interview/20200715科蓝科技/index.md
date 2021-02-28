@@ -192,7 +192,7 @@ newInstanceof(meat, Food) // true
 Vue.component('b',{
   model:{
     prop:'checked',
-	event:'change'
+	event:'testChange'
   },
   props:{
     checked:Boolean
@@ -201,11 +201,11 @@ Vue.component('b',{
     <input
       type="checkbox"
       :checked="checked"
-      @change="$emit('change',$event.target.checked)"
+      @change="$emit('testChange',$event.target.checked)"
   `
 })
 
-这里的 lovingVue 的值将会传入这个名为 checked 的 prop。同时当 <base-checkbox> 触发一个 change 事件并附带一个新的值的时候，这个 lovingVue 的 property 将会被更新。
+这里的 lovingVue 的值将会传入这个名为 checked 的 prop。同时当 <base-checkbox> 触发一个 testChange 事件并附带一个新的值的时候，这个 lovingVue 的 property 将会被更新。
 
 
 ## 19. 什么是继承链？ ##
@@ -229,7 +229,7 @@ Vue.component('b',{
 
 回调地狱，多个回调层层叠加。
 
-解决回调地狱：promise
+解决回调地狱：promise / async await 
 
 
 ## 23. 什么是浅拷贝和深拷贝？ ##
