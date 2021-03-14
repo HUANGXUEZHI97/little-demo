@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import { create, all } from 'mathjs'
 const config = {
-  number:'BigNumber',
-  precision:20
+  number:'Number',
+  precision:16
 }
 const math = create(all,config)
 
